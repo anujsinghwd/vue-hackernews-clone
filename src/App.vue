@@ -1,0 +1,49 @@
+<template>
+  <div id="app">
+    <Navbar></Navbar>
+    <router-view/>
+  </div>
+</template>
+
+<script>
+import Navbar from "@/components/Navbar";
+export default {
+  name: 'App',
+  components: {
+      Navbar
+  }
+}
+</script>
+
+<style>
+body {
+  background-color: #f0f2fa;
+  font-family: "PT Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial",
+    sans-serif;
+  color: #555f77;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 35px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+</style>
