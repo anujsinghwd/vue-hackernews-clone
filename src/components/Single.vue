@@ -1,5 +1,5 @@
 <template>
-    <div class="conatiner">
+    <div class="conatiner padding-all">
         <h2>{{story.title}}</h2>
         <p>Score: {{story.score}}</p>
         <p>{{story.url}}</p>
@@ -111,5 +111,8 @@ export default {
 }
 .comment-actions li:hover {
   color: #0095ff;
+}
+.padding-all{
+    padding: 20px;
 }
 </style>

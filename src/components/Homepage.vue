@@ -1,6 +1,5 @@
 <template>
-    <div>
-        <br />
+    <div class="padding-all">
         <Item v-for="story in stories" :key="story.data.id" :story="story" />
     </div>
 </template>
@@ -41,5 +40,7 @@ export default {
 </script>
 
 <style scoped>
-
+.padding-all{
+    padding: 20px;
+}
 </style>
